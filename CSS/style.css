@@ -303,7 +303,7 @@ section {
 }
 
 section.top-products {
-    background: var(--light);
+    background: var(--pure);
 }
 
 .section-head{
@@ -352,7 +352,7 @@ section.top-products {
     justify-content: center;
     align-items: center;
     height: 70vh;
-    background: var(--light);
+    background: var(--hevaen);
     overflow: hidden;
 }
 
@@ -399,6 +399,103 @@ section.top-products {
     100% {
         transform: perspective(1000px) rotateY(360deg);
     }
+}
+
+section.favourite-products{
+    background: var(--light);
+}
+
+section.favourite-products .food-menu .food-card {
+    background: var(--heaven);
+    padding: 1.5rem 0;
+    border: solid rgb(140, 140, 140);
+    border-radius: 8px;
+}
+
+
+section.favourite-products .food-menu .food-card {
+    margin: 24px;
+    width: 105%;
+    position: relative;
+}
+
+section.favourite-products .food-menu .food-card .product-image img {
+    width: 80%;
+    height: 200px;
+    object-fit: contain;
+    padding-bottom: 1rem;
+    transition: all 1s ease-in-out;
+}
+
+section.favourite-products .food-menu .food-card img:hover {
+    transform: translateY(10px) scale(1.2);
+}
+
+hr {
+    border: 1px solid var(--light);
+    opacity: 0.8;
+    margin: 1rem 0;
+}
+
+.text-center {
+    text-align: center;
+}
+
+section.favourite-products .food-menu .food-card h2 {
+    font-family: "Raleway-Bold";
+    font-size: 1.3rem;
+    margin-bottom: 0.25rem;
+}
+
+section.favourite-products .food-menu .food-card .stars img {
+    margin-right: 0.25rem;
+    margin-bottom: 0.5rem;
+}
+
+section.favourite-products .food-menu .food-card button {
+    font-family: "Raleway-Medium";
+    color: var(--secondary);
+    background-color: var(--heaven);
+    border: 2px solid var(--primary);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    width: 50%;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+section.favourite-products .food-menu .food-card button img {
+    background: var(--primary);
+    padding: 0.5rem;
+    height: 33px;
+    margin-right: 1.2rem;
+}
+
+section.favourite-products .food-menu .food-card button:hover {
+    background-color: var(--primary);
+    color: var(--heaven);
+}
+
+.favourite-products .btn-wrapper {
+    margin-top: 2rem;
+}
+
+.favourite-products .menu-btn {
+    width: 30px;
+    height: 30px;
+    border: none;
+    background: var(--primary);
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+}
+
+section.favourite-products .menu .food-menu .food-card .price{
+    font-family: "Raleway-Medium";
+    color: var(--danger);
+    margin-bottom: 1rem;
 }
 
 section.about-meal img {
